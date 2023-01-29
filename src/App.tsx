@@ -1,12 +1,13 @@
-import React from "react";
+import "./assets/styles/custom.scss";
 import "./App.css";
+import Routes from "./Routes";
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <h1>Começo do app para busca de dados</h1>
-    </div>
+    <>
+      <Routes />
+    </>
   );
-}
+};
 
 export default App;
