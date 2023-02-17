@@ -1,6 +1,7 @@
-import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
+import Result from "./pages/Result";
 
 const Routes = () => {
   return (
@@ -9,6 +10,9 @@ const Routes = () => {
       <Switch>
         <Route path="/" exact>
           <Home />
+        </Route>
+        <Route path="/result">
+          <Result />
         </Route>
       </Switch>
     </BrowserRouter>

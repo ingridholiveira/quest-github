@@ -1,0 +1,16 @@
+.home-container {
+  padding: 25px;
+}
+
+.title {
+  color: #000;
+}
+
+.subtitle {
+  color: #7e7e7e;
+  margin-bottom: 25px;
+}
+
+.btn-init {
+  color: #fff;
+}

@@ -1,11 +1,16 @@
+import { Link } from "react-router-dom";
 import "./style.css";
 
 const Navbar = () => {
   return (
     <>
-      <div className="navbar main-nav bg-primary">
-        <h3>Github API</h3>
-      </div>
+      <nav>
+        <div className="navbar main-nav bg-primary">
+          <Link to="/">
+            <h3>Github API</h3>
+          </Link>
+        </div>
+      </nav>
     </>
   );
 };
