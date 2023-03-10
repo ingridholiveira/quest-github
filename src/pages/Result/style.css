@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 20px;
+  padding: 30px;
 }
 
 .search-container h1 {
@@ -15,8 +15,8 @@
 .search-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 24px 10px;
+  align-items: center;
+  padding: 43px 40px;
   background-color: #e6f7ff;
   border-radius: 5px;
   margin: 20px auto;
@@ -47,7 +47,7 @@
 
 .search-button {
   height: 40px;
-  width: 160px;
+  width: 100%;
   margin-bottom: 35px;
   color: #fff;
 }
@@ -55,5 +55,20 @@
 @media (min-width: 576px) {
   .search-input {
     width: 480px;
+  }
+}
+
+@media (min-width: 992px) {
+  .search-container {
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+  .search-button {
+    width: 200px;
+  }
+
+  .list-group {
+    width: 870px;
   }
 }
