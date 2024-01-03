@@ -13,6 +13,8 @@ type User = {
   followers: string;
   location: string;
   name: string;
+  html_url: string;
+  id: string | number;
 };
 
 const Result = () => {
@@ -69,6 +71,8 @@ const Result = () => {
             followers={user.followers}
             location={user.location}
             name={user.name}
+            html={user.html_url}
+            key={user.id}
           />
         )}
       </div>

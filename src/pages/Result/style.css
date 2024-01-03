@@ -9,7 +9,6 @@
   font-weight: bold;
   text-align: left;
   color: #000;
-  /* margin: 50px 0; */
 }
 
 .search-container {
@@ -33,10 +32,11 @@
   border: 1px solid #8c8c8c;
   border-radius: 4px;
   font-size: 16px;
-  text-align: center;
+  text-align: start;
   height: 40px;
   width: 240px;
   margin-bottom: 25px;
+  padding: 10px;
 }
 
 .search-input::placeholder {

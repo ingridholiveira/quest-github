@@ -1,4 +1,4 @@
-import EmptyImage from "../../assets/images/vector.jpg";
+/* eslint-disable react/jsx-no-target-blank */
 import "./style.css";
 
 interface ResultCardProps {
@@ -7,6 +7,7 @@ interface ResultCardProps {
   followers: string;
   location: string;
   name: string;
+  html: string;
 }
 
 const ResultCard = ({
@@ -15,6 +16,7 @@ const ResultCard = ({
   followers,
   location,
   name,
+  html,
 }: ResultCardProps) => {
   return (
     <>
@@ -23,35 +25,43 @@ const ResultCard = ({
           <div className="empty-image-container">
             <img alt="none" src={avatar} />
           </div>
-          <div className="information-container container">
+          <div className="information-container container card">
             <h4 className="text-primary">Informações</h4>
-            <div className="card card-content">
-              <ul className="list-group list-group-flush">
-                <li className="list-group-item">
-                  {/* <div className="input-group mb-3">
-                    <div className="input-group-prepend">
-                      <span className="input-group-text">Perfil</span>
-                    </div>
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Usuário"
-                      aria-label="Usuário"
-                      aria-describedby="basic-addon1"
-                    />
-                  </div> */}
-                  <b>Perfil:</b> {url}
-                </li>
-                <li className="list-group-item">
-                  <b>Seguidores:</b> {followers}
-                </li>
-                <li className="list-group-item">
-                  <b>Localidade:</b> {location}
-                </li>
-                <li className="list-group-item">
-                  <b>Nome:</b> {name}
-                </li>
-              </ul>
+            <div className=" card-content">
+              <div className="row">
+                <div className="col div-container-row">
+                  <p>
+                    <b>Perfil: </b>
+                    <a href={html} target="_blank" className="link-primary">
+                      {url}
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col div-container-row">
+                  <p>
+                    <b>Seguidores: </b>
+                    {followers}
+                  </p>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col div-container-row">
+                  <p>
+                    <b>Localidade: </b>
+                    {location}
+                  </p>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col div-container-row">
+                  <p>
+                    <b>Nome: </b>
+                    {name}
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
